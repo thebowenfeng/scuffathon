@@ -29,7 +29,7 @@ export default function MovingButton(props: Props){
                     buttonRef.current.style.transform += "translateX(250px)";
                 }
             }
-        }, 150);
+        }, 100);
 
         document.onmousemove = (event) => {
             mousePos.x = event.screenX;
@@ -51,7 +51,7 @@ export default function MovingButton(props: Props){
       height: 50px;
       background-color: #61dafb;
       border-radius: 50px;
-      transition: 0.3s;
+      transition: 0.2s;
 
       :hover {
         cursor: pointer;
